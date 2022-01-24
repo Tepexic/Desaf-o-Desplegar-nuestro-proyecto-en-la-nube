@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Registro - Desafío clase 26</title>
+  </head>
+
+  <body
+    class="w-full h-screen bg-gray-900 text-white flex justify-center items-center"
+  >
+    <main>
+        <h1 class="text-xl mb-6">Registro</h1>
+        <form action="/signup" method="post" autocomplete="off">
+            <div class="form-group">
+                <label for="username">Correo electrónico:</label>
+                <input id="username" class="w-full px-2 py-1 text-black my-2 rounded" type="email" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input id="password" class="w-full px-2 py-1 text-black my-2 rounded" type="password" name="password" required>
+            </div>
+            <button
+            type="submit"
+            class="mt-6 bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+          Entrar</button>
+        </form>
+        <button
+            onclick="location.href='/login'"
+            class="mt-4 bg-blue-300 hover:bg-blue-400 text-gray-900 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+          Volver al login</button>
+    </main>
+  </body>
+</html>
